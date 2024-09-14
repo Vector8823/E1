@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desfile</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Enlaza el archivo CSS para estilos -->
+</head>
+<body>  
+    <!-- Popup inicial con opciones -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Estarás libre el 15 de septiembre después del desfile ?</p>
+            <button id="siLibre">Sí, estaré libre</button>
+            <button id="noLibre">No</button>
+        </div>
+    </div>
+
+    <!-- Mensaje de bloqueo que se muestra si la página está bloqueada -->
+    <div id="bloqueadoMensaje" class="popup bloqueado">
+        <div class="popup-content">
+            <h1>Página Bloqueada</h1>
+            <p>Esta página está bloqueada. Ingresa la contraseña para acceder nuevamente.</p>
+            <input type="password" id="contraseña" placeholder="Ingresa la contraseña">
+            <button id="verificarContraseña">Ingresar</button>
+        </div>
+    </div>
+
+    <!-- Contenido de la página que se muestra si no está bloqueada -->
+    <div id="contenido" class="contenido">
+        <h1>¡Bienvenido al evento!</h1>
+        <p>Aquí podrás encontrar toda la información sobre el desfile y más.</p>
+    </div>
+
+    <!-- Enlaza el archivo JavaScript para la lógica -->
+    <script src="script.js"></script>
+</body>
+</html>

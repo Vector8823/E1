@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;  /* Establece la fuente de la página */
+    background-color: #f0f0f0;  /* Color de fondo de la página */
+    margin: 0;  /* Elimina el margen por defecto */
+    padding: 0;  /* Elimina el relleno por defecto */
+    display: flex;  /* Utiliza flexbox para centrar el contenido */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;  /* Centra verticalmente */
+    height: 100vh;  /* Ocupa toda la altura de la ventana del navegador */
+}
+
+.popup {
+    position: fixed;  /* Fija la posición del popup */
+    top: 0;  /* Ubica el popup en la parte superior */
+    left: 0;  /* Ubica el popup a la izquierda */
+    width: 100%;  /* Ocupa el 100% del ancho de la ventana */
+    height: 100%;  /* Ocupa el 100% de la altura de la ventana */
+    background-color: rgba(0, 0, 0, 0.7);  /* Fondo oscuro semi-transparente */
+    display: flex;  /* Utiliza flexbox para centrar el contenido del popup */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;  /* Centra verticalmente */
+}
+
+.popup-content {
+    background-color: white;  /* Fondo blanco para el contenido del popup */
+    padding: 20px;  /* Relleno interno del popup */
+    text-align: center;  /* Centra el texto en el contenido del popup */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  /* Sombra alrededor del popup */
+    max-width: 90%;  /* Máximo ancho del popup (90% del ancho de la ventana) */
+    width: 300px;  /* Ancho fijo del popup */
+}
+
+.popup-content p {
+    font-size: 1.2em;  /* Tamaño de fuente para el texto en el popup */
+    margin-bottom: 20px;  /* Margen inferior del texto */
+}
+
+button {
+    padding: 10px 20px;  /* Relleno del botón */
+    margin: 5px;  /* Margen alrededor del botón */
+    border: none;  /* Elimina el borde del botón */
+    cursor: pointer;  /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1em;  /* Tamaño de fuente del botón */
+    border-radius: 5px;  /* Bordes redondeados del botón */
+}
+
+button#siLibre {
+    background-color: #4CAF50;  /* Color de fondo verde para el botón "Sí" */
+    color: white;  /* Color del texto blanco para el botón "Sí" */
+}
+
+button#noLibre {
+    background-color: #f44336;  /* Color de fondo rojo para el botón "No" */
+    color: white;  /* Color del texto blanco para el botón "No" */
+}
+
+#contenido {
+    display: none;  /* Oculta el contenido al inicio */
+    text-align: center;  /* Centra el texto del contenido */
+    margin-top: 20px;  /* Margen superior del contenido */
+}
+
+.bloqueado {
+    display: none;  /* Oculta el mensaje de bloqueo al inicio */
+}
+
+@media (max-width: 600px) {
+    .popup-content {
+        width: 90%;  /* Ancho del popup ajustado para pantallas pequeñas */
+    }
+}
